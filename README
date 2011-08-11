@@ -1,0 +1,5 @@
+Sinatra App Exercise:
+
+Goal: Using ActiveRecord, connect to "Training Center" db and display the title of the schedule item that is "now playing" when a user visits http://localhost:4567/now_playing
+
+Bonus: Also display the class that is next up
