@@ -21,7 +21,7 @@ class NowPlayingTest < Test::Unit::TestCase
   end
 
   def test_now_playing_with_item
-    now = Time.now
+    now = Time.now.utc
     start_at = now.advance(:minutes => -5)
     end_at = now.advance(:minutes => 30)
     
