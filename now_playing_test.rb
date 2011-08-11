@@ -19,6 +19,11 @@ class NowPlayingTest < Test::Unit::TestCase
   def test_active_record_connection
     assert ActiveRecord::Base.connection
   end
+  
+  def test_active_record_default_timezone
+    # TRUST ME. DO THIS.
+    assert_equal :utc, ActiveRecord::Base.default_timezone
+  end
 
   def test_now_playing_with_item
     now = Time.now
