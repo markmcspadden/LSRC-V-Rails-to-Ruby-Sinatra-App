@@ -3,6 +3,7 @@ SINATRA_ENV="test"
 require 'now_playing'
 require 'test/unit'
 require 'rack/test'
+require 'active_support/core_ext/time/calculations'
 
 class NowPlayingTest < Test::Unit::TestCase
   include Rack::Test::Methods  
